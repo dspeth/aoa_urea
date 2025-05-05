@@ -42,10 +42,10 @@ diamond blastp -d "$PROT"_protein_db/"$PROT"_seed_db -q $DB -p $THREADS -o "$PRO
 
 # read lookup
 cd "$PROT"_protein_db
-/lisc/project/dome/speth/resources/scripts/other/blast_based_read_lookup_new.pl "$PROT"_hits $DB "$PROT"_hits.faa
+blast_based_read_lookup_new.pl "$PROT"_hits $DB "$PROT"_hits.faa
 
 # 2nd diamond search
-/lisc/project/dome/speth/resources/scripts/other/calc_max_score.pl "$PROT"_hits.faa BLOSUM45 "$PROT"_self
+calc_max_score.pl "$PROT"_hits.faa BLOSUM45 "$PROT"_self
 
 # create BSR table for inspection
-/lisc/project/dome/speth/resources/scripts/other/bsr_calc.pl "$PROT"_hits "$PROT"_self "$PROT"_bsr
+bsr_calc.pl "$PROT"_hits "$PROT"_self "$PROT"_bsr
