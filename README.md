@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/798206431.svg)](https://doi.org/10.5281/zenodo.17294067)
+
 ### AOA_urea
 
 This repository hosts the scripts associated with the sequence analyses for the work described in Stuehrenberg, Kitzinger, et al. 
